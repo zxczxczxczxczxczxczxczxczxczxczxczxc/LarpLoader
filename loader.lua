@@ -1,3 +1,5 @@
+game.Players.LocalPlayer.PlayerScripts.ClientActor.ClientManager.Enabled = false
+
 local env = _G
 pcall(function()
 	env = getgenv()
