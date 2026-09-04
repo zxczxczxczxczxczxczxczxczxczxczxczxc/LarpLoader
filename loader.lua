@@ -12,6 +12,11 @@ local player = game:GetService("Players").LocalPlayer
 local identify_executor = env.identifyexecutor or identifyexecutor
 local executor_name = type(identify_executor) == "function" and identify_executor()
 
+if executor_name == "Potassium" then
+	player:Kick("Unsupported executor - potassium")
+	return
+end
+
 if game.PlaceId == 4111023553 then
 	player:Kick("Dont execute in menu")
 	return
